@@ -5,216 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
-<body>
     <style>
         * {
             margin: 0;
         }
-
-        header {
-            display: flex;
-            width: 100%;
-            height: 40px;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-        }
-
-        #headerLeft {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 450px;
-            font-size: 20px;
-            padding: 10px 0;
-        }
-
-        #headerLeft img {
-            object-fit: cover;
-            width: 150px;
-            height: 30px;
-        }
-
-        .searchContainer{
-            position: relative;
-        }
-        #search {
-            height: 30px;
-            border-radius: 30px;
-            background-color: rgba(220, 220, 220, 0.26);
-            text-indent: 40px;
-            font-size: 15px;
-        }
-
-       .searchContainer i {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            color: grey;
-
-        }
-
-        #headerRight {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 200px;
-            font-size: 20px;
-            color: grey;
-        }
-
-        #headerRight div {
-            display: flex;
-        }
-
-        .profileIcon {
-            display: block;
-            content: '';
-            background: red;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-        }
-
-        .container {
-            background: gainsboro;
-        }
-
-        nav {
-            background: yellow;
-        }
-
-        #leftWrapper {
-            border: 3px solid red;
-        }
-
-        main {
-            background: greenyellow;
-        }
-
-        aside {
-            background: plum;
-        }
     </style>
+</head>
+
+<body>
+
     <header>
-        <div id="headerLeft">
-            <i class="fa-solid fa-bars"></i>
-            <img src="assets/images/medium-logo-png_seeklogo-347160.png" alt="Logo Medium">
-            <div class="searchContainer">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search" id="search" name="search">
-            </div>
-        </div>
-        <div id="headerRight">
-            <div>
-                <i class="fa-solid fa-pen-to-square"></i>
-                <p>Write</p>
-            </div>
+        <img src="assets/images/Medium_(website)_logo.svg" alt="Logo Medium">
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-bookmark"></i>
             <i class="fa-regular fa-bell"></i>
-            <span class="profileIcon"></span>
+            <div class="resume">Resume membership</div>
+            <div class="profileLogo">T</div>
         </div>
-
     </header>
-    <div class="container">
-        <nav>
-            <div class="menu">
+    <div class="wrapper">
+        <main>
+            <nav>
                 <ul>
-                    <li><i class="fa-regular fa-house"></i>
-                        <p>Home</p>
-                    </li>
-                    <li><i class="fa-regular fa-bookmark"></i>
-                        <p>Library</p>
-                    </li>
-                    <li><i class="fa-regular fa-user"></i>
-                        <p>Profile</p>
-                    </li>
-                    <li><i class="fa-regular fa-newspaper"></i>
-                        <p>Stories</p>
-                    </li>
-                    <li><i class="fa-solid fa-chart-line"></i>
-                        <p>Stats</p>
-                    </li>
+                    <li><p>Following</p></li>
+                    <li><p>Recommended for you</p></li>
                 </ul>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><i class="fa-solid fa-user-group"></i>
-                        <p>Following</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-plus"></i>
-                        <p>Find writers and pubblications to follow</p>
-                        <a href="">See suggestions</a>
-                    </li>
-                </ul>
+            </nav>
 
-            </div>
-        </nav>
-        <section id="leftWrapper">
-            <main>
-                <nav>
-                    <ul>
-                        <li>For you</li>
-                        <li>Featured</li>
-                    </ul>
-                </nav>
-                <div class="card">
-                    <div class="cardLeft">
-                        <div class="userInfo">
-                            <div class="userLogo"></div>
-                            <p class="userName">Michal Malewicz</p>
-                        </div>
-                        <div class="textContaoiner">
-                            <h2>The end of Dashboards and Design Systems</h2>
-                            <p>Design is becoming quietly human again.</p>
-                        </div>
-                    </div>
-                    <img src="assets/images/image_1 (2).webp" alt="">
-                </div>
-                <div class="card">
-                    <div class="cardLeft">
-                        <div class="userInfo">
-                            <div class="userLogo"></div>
-                            <p class="userName">Ryusuke Koyama
-                                Ryusuke Koyama</p>
-                        </div>
-                        <div class="textContaoiner">
-                            <h2>Pragmatic Concepts: How to Create Concepts That Generate Action</h2>
-                            <p>In one of NUCB’s extracurricular activities, we’re developing a proposal for a certain
-                                region. However, I pointed out a problem with the...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardLeft">
-                        <div class="userInfo">
-                            <div class="userLogo"></div>
-                            <p class="userName">ishikasoni</p>
-                        </div>
-                        <div class="textContaoiner">
-                            <h2>The Design of Oppression in Papers, Please</h2>
-                            <p>How intentional friction, sound, color, and interacrion design turn paperwork into deeply
-                                intimidating and morally heavy...</p>
-                        </div>
-                    </div>
-                    <img src="assets/images/image_1 (2).webp" alt="">
-                </div>
-            </main>
-            <aside>
-                <p>Staff picks</p>
-                <div class="card">
+            <div class="card">
+                <div class="cardLeft">
                     <div class="userInfo">
-                        <div class="userLogo"></div>
-                        <p class="userName">Constantin Patrascu</p>
+                        <div class="userLogo">logo</div>
+                        <div class="userName">Nome</div>
                     </div>
-                    <h3>I’m a Psychologist and I Let My Kids Have Screen Time: Here’s Why the Research Might Surprise
-                        You</h3>
-                    <p class="lastSeen">5d ago</p>
+                    <div class="textWrapper">
+                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas veniam incidunt eum sequi tenetur in corporis natus reprehenderit labore deserunt quos nam ipsa laborum enim dolorum repudiandae fugiat, iusto sit!</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottomLeft">
+                            <p class="date">Dec 3</p>
+                            <p class="time">4 min read</p>
+                            <p class="topicInfo">React</p>
+                            <p>Popular on medium</p>
+                        </div>
+                        <div class="bottomRight">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
-            </aside>
-        </section>
+
+                <img src="assets/images/image_1 (2).webp" alt="Immagine">
+            </div>
+        </main>
+        <aside></aside>
     </div>
 
     <script src="https://kit.fontawesome.com/49727d7509.js" crossorigin="anonymous"></script>
