@@ -8,20 +8,112 @@
 </head>
 
 <body>
+    <style>
+        * {
+            margin: 0;
+        }
 
+        header {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        #headerLeft {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 450px;
+            font-size: 20px;
+            padding: 10px 0;
+        }
+
+        #headerLeft img {
+            object-fit: cover;
+            width: 150px;
+            height: 30px;
+        }
+
+        .searchContainer{
+            position: relative;
+        }
+        #search {
+            height: 30px;
+            border-radius: 30px;
+            background-color: rgba(220, 220, 220, 0.26);
+            text-indent: 40px;
+            font-size: 15px;
+        }
+
+       .searchContainer i {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: grey;
+
+        }
+
+        #headerRight {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 200px;
+            font-size: 20px;
+            color: grey;
+        }
+
+        #headerRight div {
+            display: flex;
+        }
+
+        .profileIcon {
+            display: block;
+            content: '';
+            background: red;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        .container {
+            background: gainsboro;
+        }
+
+        nav {
+            background: yellow;
+        }
+
+        #leftWrapper {
+            border: 3px solid red;
+        }
+
+        main {
+            background: greenyellow;
+        }
+
+        aside {
+            background: plum;
+        }
+    </style>
     <header>
-        <div>
+        <div id="headerLeft">
             <i class="fa-solid fa-bars"></i>
             <img src="assets/images/medium-logo-png_seeklogo-347160.png" alt="Logo Medium">
-            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-            <input type="text" placeholder="Search" id="search" name="search">
+            <div class="searchContainer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" id="search" name="search">
+            </div>
         </div>
-        <div>
-            <div><i class="fa-solid fa-pen-to-square"></i>
+        <div id="headerRight">
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
                 <p>Write</p>
             </div>
             <i class="fa-regular fa-bell"></i>
-            <span class="profileIcon">Icona</span>
+            <span class="profileIcon"></span>
         </div>
 
     </header>
@@ -117,7 +209,8 @@
                         <div class="userLogo"></div>
                         <p class="userName">Constantin Patrascu</p>
                     </div>
-                    <h3>I’m a Psychologist and I Let My Kids Have Screen Time: Here’s Why the Research Might Surprise You</h3>
+                    <h3>I’m a Psychologist and I Let My Kids Have Screen Time: Here’s Why the Research Might Surprise
+                        You</h3>
                     <p class="lastSeen">5d ago</p>
                 </div>
             </aside>
