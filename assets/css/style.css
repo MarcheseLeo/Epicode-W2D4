@@ -2,269 +2,491 @@
      margin: 0;
  }
 
- body{
-    font-family: Arial, Helvetica, sans-serif;
- }
- header{
-    background: #fff;
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 800px;
-    padding: 10px 120px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+ body {
+     font-family: Arial, Helvetica, sans-serif;
  }
 
- header img{
-    width: 150px;
-    padding: 10px 0;
+ header {
+     background: #fff;
+     position: sticky;
+     top: 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     min-width: 800px;
+     padding: 10px 120px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
  }
 
- header div{
-    display: flex;
-    width: 400px;
-    justify-content: space-evenly;
-    align-items: center;
+ header img {
+     width: 150px;
+     padding: 10px 0;
  }
 
- header i{
-    font-size: 20px;
-    color:  rgb(122, 122, 122);
+ header div {
+     display: flex;
+     width: 400px;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ header i {
+     font-size: 20px;
+     color: rgb(122, 122, 122);
  }
 
  #resume {
-    display: inline-block;
-    text-align: center;
-    width: 170px;
-    padding: 10px 0;
-    border: 1px solid rgb(122, 122, 122);
-    border-radius: 30px;
-    font-size: 14px;
+     display: inline-block;
+     text-align: center;
+     width: 170px;
+     padding: 10px 0;
+     border: 1px solid rgb(122, 122, 122);
+     border-radius: 30px;
+     font-size: 14px;
+ }
+
+ .profileLogo {
+     background-color: red;
+     color: #fff;
+     font-weight: 700;
+     font-size: 26px;
+     display: inline-block;
+     width: 35px;
+     height: 35px;
+     align-content: center;
+     border-radius: 50%;
+     text-align: center;
+
+ }
+
+ .wrapper {
+     width: 90%;
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     padding: 0px 100px;
+     margin: auto;
+ }
+
+ main {
+     width: 70%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 40px;
+     margin: 60px 0;
+ }
+
+ main nav {
+     align-self: start;
+     border-bottom: 1px solid gainsboro;
+     width: 90%;
+     margin-left: 50px;
+ }
+
+ main nav ul {
+     padding: 0;
+     list-style-type: none;
+     display: flex;
+     gap: 20px;
+     font-size: 18px;
+     font-weight: 400;
+
+ }
+
+ main nav ul li {
+     padding: 10px;
+ }
+
+ main nav ul li:last-of-type {
+     background-color: #fff;
+     border-bottom: 2px solid black;
+ }
+
+ aside {
+     width: 30%;
+     border-left: 1px solid gainsboro;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 50px;
+     gap: 40px;
+ }
+
+ main .card {
+     display: flex;
+     width: 90%;
+     align-items: center;
+     gap: 40px;
+     padding: 15px;
+
+ }
+
+ main .card img {
+     width: 220px;
+     height: 150px;
+     object-fit: cover;
+ }
+
+ .cardLeft {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+
+
+
+ .userInfo {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .userInfo .userLogo {
+     width: 25px;
+     height: 25px;
+     background-color: brown;
+     border-radius: 50%;
+ }
+
+ .userInfo .userName {
+     font-size: 14px;
+     font-weight: 600;
+ }
+
+ .bottom {
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .bottomLeft {
+     display: flex;
+     gap: 10px;
+     font-size: 14px;
+     color: grey;
+     align-items: center;
+
+ }
+
+ .bottomLeft p {
+     position: relative;
+ }
+
+ .bottomLeft p:not(:last-child)::after {
+     content: '.';
+     position: absolute;
+     bottom: 0px;
+     right: -7px;
+     font-size: 24px;
+ }
+
+ .bottomLeft p:nth-child(3)::after {
+     bottom: 7px;
+ }
+
+ .bottomRight {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .bottomRight i {
+     font-size: 20px;
+ }
+
+ .topicInfo {
+     background-color: rgb(242, 242, 242);
+     padding: 7px;
+     border-radius: 20px;
+ }
+
+ .card p {
+     color: grey;
+ }
+
+ .textWrapper h2 {
+     font-size: 28px;
+     font-weight: 700;
+ }
+
+ .textWrapper p {
+     font-size: 18px;
+     margin-top: 10px;
+     white-space: wrap;
+     text-overflow: ellipsis;
+ }
+
+ .discoverSection {
+     display: flex;
+     width: 80%;
+     flex-direction: column;
+     align-items: center;
+     gap: 30px;
+     padding: 0px 0;
+     border-bottom: 1px solid gainsboro;
+ }
+
+ .discoverIcons {
+     display: flex;
+     justify-items: center;
+     align-items: center;
+ }
+
+
+ .discoverIcons div {
+     width: 40px;
+     height: 40px;
+     overflow: hidden;
+     display: inline-block;
+ }
+
+ .discoverIcons div img {
+     width: 350%;
+     height: 100%;
+ }
+
+ .discoverIcons+P {
+     width: 80%;
+     text-align: center;
+     font-size: 1em;
+ }
+
+ .linkWrapper {}
+
+ .linkWrapper i {
+
+     margin-right: 10px;
+ }
+
+ .fa-twitter {
+     color: rgb(55, 162, 244);
+     font-size: 1.5em;
+ }
+
+ .fa-plus {
+     color: rgb(142, 142, 142);
+     ;
+ }
+
+ .linkWrapper a {
+     text-decoration: none;
+     padding: 10px;
+     padding-right: 40px;
+     background-color: #fff;
+     border-radius: 20px;
+     color: black;
+     font-weight: 400;
+     border: 1px solid rgb(142, 142, 142);
+     ;
+ }
+
+ .discoverSection p:last-of-type {
+     text-decoration: underline;
+     font-size: 0.9em;
+     color: rgb(142, 142, 142);
+     margin-bottom: 30px;
+ }
+
+ .recommendedSection p {
+     font-size: 1.1em;
+     font-weight: 700;
+ }
+
+ .recommendedSection {
+     align-self: flex-start;
+     width: 100%;
+     margin: 15px 0;
+ }
+
+
+ #topics ul {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     width: 70%;
+     gap: 10px;
+     margin: 15px 0;
+ }
+
+ #topics ul li {
+     padding: 10px;
+     background-color: rgb(242, 242, 242);
+     border-radius: 30px;
+     min-width: 30px;
+     text-align: center;
+ }
+
+ .followSection {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+
+ .followCard {
+     display: flex;
+     gap: 15px;
+     align-items: center;
+ }
+
+ .followCard .userLogo {
+     width: 50px;
+     height: 50px;
+     background-color: chocolate;
+     border-radius: 50%;
+ }
+
+ .userInfoText {
+     width: 40%;
+ }
+
+ .userInfoText .name {
+     font-size: 1.2em;
+     font-weight: 600;
+ }
+
+ .followCard .description {
+     font-size: 0.9em;
+     color: rgb(124, 124, 124);
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .followUser {
+     padding: 10px 15px;
+     border-radius: 30px;
+     background-color: #fff;
+     border: 1px solid rgb(124, 124, 124);
+
+ }
+
+ .followSection>p {
+     font-weight: 600;
+ }
+
+ .savedSection {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+.savedSection > p:first-child{
+    font-weight: 600;
+}
+ .savedCard {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .savedCard h2{
+    font-size: 1.1em;
+    width: 80%;
+ }
+ .savedBottom{
+    display: flex;
+    color: rgb(124, 124, 124);
+    font-size: 0.8em;
+    align-items: center;
+    gap: 10px;
+ }
+ .savedBottom .info{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+ }
+
+ .savedBottom > i{
+    font-size: 0.6em
+ }
+
+
+ .savedSection > p:last-child{
+    color: green;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 0.9em;
+ }
+
+.navSection{
+}
+ .navSection ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: rgb(122, 122, 122);
+ }
+
+ .followSection .followCard:nth-of-type(1) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-size: cover;
+    background-position: center top;
+ }
+ .followSection .followCard:nth-of-type(2) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-size: cover;
+    background-position: center top;
+ }
+ .followSection .followCard:nth-of-type(3) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-size: cover;
+    background-position: center top;
+ }
+
+ .savedSection .savedCard:nth-of-type(1) .userInfo .userLogo{
+    background-image: url(https://plus.unsplash.com/premium_photo-1669703777437-27602d656c27?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center top;
+ }
+
+ .savedSection .savedCard:nth-of-type(2) .userInfo .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center top;
  }
 
  .profileLogo{
-    background-color: red;
-    color: #fff;
-    font-weight: 700;
-    font-size: 26px;
-    display: inline-block;
-    width: 35px;
-    height: 35px;  
-    align-content: center;
-    border-radius: 50%;
-    text-align: center;
- }
-
-.wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0px 100px;
-    margin: auto;
-        
-}
-main{
-    width: 70%;
-    display: flex;
-    flex-direction: column;   
-    align-items: center;
-    gap: 40px;
-    margin: 60px 0;
-}
-main nav{
-    align-self: start;
-    border-bottom: 1px solid gainsboro;
-    width: 90%;
-    margin-left: 50px ;
-}
-main nav ul{
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    font-size: 18px;
-    font-weight: 400;
-
-}
-main nav ul li{
-    padding: 10px;
-}
-main nav ul li:last-of-type{
-    background-color: #fff;
-    border-bottom: 2px solid black;
-}
-aside{
-    width: 30%;
-    border-left: 1px solid gainsboro;
-    display: flex;
-    flex-direction: column;  
-    padding: 0 50px;
-    gap: 20px;
-}
-main .card{
-    display: flex;
-    width: 90%;
-    align-items: center;
-    gap: 40px;
-    padding: 15px ;
-    
-}
-main .card img{
-    width: 220px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid;
-    
-}
-.cardLeft{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    background-image: url(https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
-
-
-.userInfo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.userInfo .userLogo{
-    width: 25px;
-    height: 25px;
-    background-color: brown;
-    border-radius: 50%;
+main .card:nth-of-type(1) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1639747280929-e84ef392c69a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
-.userInfo .userName{
-    font-size: 14px;
-    font-weight: 600;
+main .card:nth-of-type(2) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=934&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
-.bottom{
-    display: flex;
-    justify-content: space-between;
-   
+main .card:nth-of-type(3) .userLogo{
+    background-image: url(https://plus.unsplash.com/premium_photo-1689565611422-b2156cc65e47?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}main .card:nth-of-type(4) .userLogo{
+    background-image: url(https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
-.bottomLeft{
-    display: flex;
-    gap: 10px;
-    font-size: 14px;
-    color: grey;
-    align-items: center;
+main .card:nth-of-type(5) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1672863601285-253fc82db868?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
-.bottomRight{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+main .card:nth-of-type(6) .userLogo{
+    background-image: url(https://images.unsplash.com/photo-1660680299120-c7c132df1b1f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
-
-.bottomRight i{
-    font-size: 20px;
-}
-.topicInfo{
-    background-color: rgb(242, 242, 242);
-    padding: 7px;
-    border-radius: 20px;
-}
-
-.card p{
-    color: grey;
-}
-
-.textWrapper h2{
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.textWrapper p{
-    font-size: 18px;
-    margin-top: 10px;
-    white-space: wrap;
-    text-overflow: ellipsis;
-}
-
-.discoverSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.discoverIcons{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
-
-.discoverIcons div{
-    width: 30px;
-    height: 30px;
-    border: 1px solid;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.discoverIcons div img{
-    width: 350%;
-    height: 100%;
-}
-
-.discoverIcons + P {
-    width: 80%;
-    text-align: center;
-    font-size: 1em;
-}
-.linkWrapper{
-    
-}
-.linkWrapper i{
-    
-    margin-right: 10px;
-}
-.fa-twitter{
-    color: rgb(55, 162, 244);
-    font-size: 1.5em;
-}
-
-.fa-plus{
-    color: rgb(142, 142, 142);;
-}
-.linkWrapper a{
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 40px;
-    background-color: #fff;
-    border-radius: 20px;    
-    color: black;
-    font-weight: 400;
-    border: 1px solid rgb(142, 142, 142);;
-}
-
-.discoverSection p:last-of-type{
-    text-decoration: underline;
-    font-size: 0.9em;
-    color: rgb(142, 142, 142);
-}
-
-.recommendedSection p{
-    font-size: 1.1em;
-    font-weight: 700;    
-}
-
-.topics{
-    
-}
-
-#topics ul {
-   list-style: none;
-   padding: 0;
-}
-
