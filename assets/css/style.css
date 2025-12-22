@@ -3,8 +3,9 @@
  }
 
  body {
-     font-family: Arial, Helvetica, sans-serif;
+     font-family:  'Open sans', Arial, Helvetica, sans-serif;
  }
+
 
  header {
      background: #fff;
@@ -18,6 +19,8 @@
      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
      z-index: 1000;
  }
+
+
 
  header img {
      width: 150px;
@@ -50,7 +53,6 @@
      background-color: red;
      color: #fff;
      font-weight: 700;
-     font-size: 26px;
      display: inline-block;
      width: 35px;
      height: 35px;
@@ -279,7 +281,16 @@
      color: black;
      font-weight: 400;
      border: 1px solid rgb(142, 142, 142);
-     ;
+     transition: all 0.2s linear;
+ }
+
+ .linkWrapper a:hover{
+    background-color: rgb(55, 162, 244);
+    color: #fff;
+ }
+
+ .linkWrapper a:hover > .fa-twitter{
+    color: #fff;
  }
 
  .discoverSection p:last-of-type {
@@ -317,6 +328,11 @@
      border-radius: 30px;
      min-width: 30px;
      text-align: center;
+     cursor: pointer;
+ }
+
+ #topics ul li:hover{
+    opacity: 0.6;
  }
 
  .followSection {
@@ -361,7 +377,13 @@
      border-radius: 30px;
      background-color: #fff;
      border: 1px solid rgb(124, 124, 124);
+     transition: all 0.2s linear;
+     cursor: pointer;
+ }
 
+ .followUser:hover{
+    background-color: black;
+    color: #fff;
  }
 
  .followSection>p {
@@ -425,69 +447,64 @@
 
  .followSection .followCard:nth-of-type(1) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
-    background-size: cover;
-    background-position: center top;
  }
  .followSection .followCard:nth-of-type(2) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
-    background-size: cover;
-    background-position: center top;
  }
  .followSection .followCard:nth-of-type(3) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
-    background-size: cover;
-    background-position: center top;
  }
 
  .savedSection .savedCard:nth-of-type(1) .userInfo .userLogo{
     background-image: url(https://plus.unsplash.com/premium_photo-1669703777437-27602d656c27?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center top;
  }
 
  .savedSection .savedCard:nth-of-type(2) .userInfo .userLogo{
     background-image: url(https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center top;
  }
 
  .profileLogo{
     background-image: url(https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
-}
+ }
 
 main .card:nth-of-type(1) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1639747280929-e84ef392c69a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
 }
 
 main .card:nth-of-type(2) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=934&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
 }
 
 main .card:nth-of-type(3) .userLogo{
     background-image: url(https://plus.unsplash.com/premium_photo-1689565611422-b2156cc65e47?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
 
-}main .card:nth-of-type(4) .userLogo{
+}
+
+main .card:nth-of-type(4) .userLogo{
     background-image: url(https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
 }
 
 main .card:nth-of-type(5) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1672863601285-253fc82db868?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
 }
 
 main .card:nth-of-type(6) .userLogo{
     background-image: url(https://images.unsplash.com/photo-1660680299120-c7c132df1b1f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+
+.followSection .followCard:nth-of-type(1) .userLogo,
+.followSection .followCard:nth-of-type(2) .userLogo,
+.followSection .followCard:nth-of-type(3) .userLogo,
+.savedSection .savedCard:nth-of-type(1) .userInfo .userLogo,
+.savedSection .savedCard:nth-of-type(2) .userInfo .userLogo,
+.profileLogo,
+main .card:nth-of-type(1) .userLogo,
+main .card:nth-of-type(2) .userLogo,
+main .card:nth-of-type(3) .userLogo,
+main .card:nth-of-type(4) .userLogo,
+main .card:nth-of-type(5) .userLogo,
+main .card:nth-of-type(6) .userLogo {
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
